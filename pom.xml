@@ -7,7 +7,7 @@
   <name>GroupParent</name>
   <version>1.0.0</version>
   <description>The parent of all DevZendo.org Maven projects
-  (GPL2) 2008-2010 Matt Gumbley, DevZendo.org</description>
+  (Apache License v2) 2008-2010 Matt Gumbley, DevZendo.org</description>
 
   <build>
   	<plugins>
@@ -103,7 +103,7 @@
   
   <organization>
   	<name>Matt Gumbley</name>
-	<url>http://www.gumbley.me.uk/matt.html</url>
+	<url>http://devzendo.org/</url>
   </organization>
   
   <distributionManagement>
