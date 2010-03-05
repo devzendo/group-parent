@@ -9,6 +9,11 @@
   <description>The parent of all DevZendo.org Maven projects
   (Apache License v2) 2008-2010 Matt Gumbley, DevZendo.org</description>
 
+  <organization>
+  	<name>DevZendo.org</name>
+	<url>http://devzendo.org/</url>
+  </organization>
+  
   <build>
   	<plugins>
   		
@@ -92,10 +97,4 @@
 
   	</plugins>
   </reporting>
-  
-  <organization>
-  	<name>Matt Gumbley</name>
-	<url>http://devzendo.org/</url>
-  </organization>
-  
 </project>
