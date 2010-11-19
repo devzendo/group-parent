@@ -5,7 +5,7 @@
   <artifactId>GroupParent</artifactId>
   <packaging>pom</packaging>
   <name>GroupParent</name>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <description>The parent of all DevZendo.org Maven projects
   (Apache License v2) 2008-2010 Matt Gumbley, DevZendo.org</description>
 
