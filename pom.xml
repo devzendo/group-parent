@@ -46,16 +46,6 @@
   	<plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-checkstyle-plugin</artifactId>
-        <configuration>
-          <configLocation>../../../CodingStandards/workspace/trunk/checkstyle_conf.xml</configLocation>
-          <!-- CodingStandards is checked out at the same directory level
-               on the CI server (Hudson) as my other projects. -->
-        </configuration>
-      </plugin>
-   
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jxr-plugin</artifactId>
       </plugin>
     
