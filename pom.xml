@@ -69,6 +69,15 @@
 		  </rulesets>
 		</configuration>
   	  </plugin>
+  	  
+  	  <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>findbugs-maven-plugin</artifactId>
+        <version>2.3.1</version>
+        <configuration>
+          <effort>Max</effort>
+        </configuration>
+      </plugin>
 	  
 	  <plugin>
   	  	<groupId>org.codehaus.mojo</groupId>
