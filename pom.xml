@@ -5,15 +5,43 @@
   <artifactId>GroupParent</artifactId>
   <packaging>pom</packaging>
   <name>GroupParent</name>
-  <version>1.0.1</version>
-  <description>The parent of all DevZendo.org Maven projects
-  (Apache License v2) 2008-2010 Matt Gumbley, DevZendo.org</description>
+  <version>1.0.2-SNAPSHOT</version>
+  <description>The parent of all DevZendo.org Maven Java projects
+  (Apache License v2) 2008-2013 Matt Gumbley, DevZendo.org</description>
 
-  <organization>
-  	<name>DevZendo.org</name>
-	<url>http://devzendo.org/</url>
-  </organization>
-  
+  <url>http://www.devzendo.org/content/groupparent</url>
+
+    <organization>
+        <name>DevZendo.org</name>
+        <url>http://devzendo.org/</url>
+    </organization>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <scm>
+        <url>http://devzendo-org-groupparent.googlecode.com/hg/</url>
+        <connection>scm:hg:http://devzendo-org-groupparent.googlecode.com/hg/</connection>
+        <developerConnection>scm:hg:https://devzendo-org-groupparent.googlecode.com/hg/</developerConnection>
+    </scm>
+    <developers>
+        <developer>
+            <id>matt.gumbley</id>
+            <name>Matt Gumbley</name>
+            <email>matt.gumbley@devzendo.org</email>
+        </developer>
+    </developers>
+
+    <parent>
+    <groupId>org.sonatype.oss</groupId>
+    <artifactId>oss-parent</artifactId>
+    <version>7</version>
+  </parent>
+
   <build>
   	<plugins>
   		
@@ -40,7 +68,53 @@
 		</executions>
   	  </plugin>
 
-  	</plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <version>2.2</version>
+            <executions>
+                <execution>
+                    <phase>package</phase>
+                    <goals>
+                        <goal>test-jar</goal>
+                    </goals>
+                    <configuration>
+                        <forceCreation>true</forceCreation>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
+
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-source-plugin</artifactId>
+            <version>2.2.1</version>
+            <executions>
+                <execution>
+                    <id>attach-sources</id>
+                    <goals>
+                        <goal>jar</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-gpg-plugin</artifactId>
+            <version>1.4</version>
+            <executions>
+                <execution>
+                    <id>sign-artifacts</id>
+                    <phase>verify</phase>
+                    <goals>
+                        <goal>sign</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
+
+    </plugins>
   </build>
   
   <reporting>
