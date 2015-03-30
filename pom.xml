@@ -2,12 +2,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.devzendo</groupId>
-    <artifactId>GroupParent</artifactId>
+    <artifactId>group-parent</artifactId>
     <packaging>pom</packaging>
-    <name>GroupParent</name>
-    <version>1.0.4-SNAPSHOT</version>
+    <name>group-parent</name>
+    <version>1.1.0-SNAPSHOT</version>
     <description>The parent of all DevZendo.org Maven Java projects
-        (Apache License v2) 2008-2013 Matt Gumbley, DevZendo.org
+        (Apache License v2) 2008-2015 Matt Gumbley, DevZendo.org
     </description>
 
     <url>http://www.devzendo.org/content/groupparent</url>
@@ -25,11 +25,11 @@
         </license>
     </licenses>
     <scm>
-        <url>http://devzendo-org-groupparent.googlecode.com/hg/</url>
-        <connection>scm:hg:http://devzendo-org-groupparent.googlecode.com/hg/
+        <url>https://devzendo@bitbucket.org/devzendo/group-parent</url>
+        <connection>scm:hg:https://devzendo@bitbucket.org/devzendo/group-parent
         </connection>
         <developerConnection>
-            scm:hg:https://devzendo-org-groupparent.googlecode.com/hg/
+            scm:hg:https://devzendo@bitbucket.org/devzendo/group-parent
         </developerConnection>
     </scm>
     <developers>
@@ -51,7 +51,7 @@
 
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.3.2</version>
+                <version>3.3</version>
                 <configuration>
                     <source>1.5</source>
                     <target>1.5</target>
@@ -61,7 +61,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <version>2.7</version>
+                <version>2.10.2</version>
                 <executions>
                     <execution>
                         <id>attach-javadocs</id>
@@ -75,7 +75,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
-                <version>2.4</version>
+                <version>2.6</version>
                 <executions>
                     <execution>
                         <phase>package</phase>
@@ -92,7 +92,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
-                <version>2.2.1</version>
+                <version>2.4</version>
                 <executions>
                     <execution>
                         <id>attach-sources</id>
@@ -106,7 +106,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-gpg-plugin</artifactId>
-                <version>1.4</version>
+                <version>1.6</version>
                 <executions>
                     <execution>
                         <id>sign-artifacts</id>
@@ -126,13 +126,13 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jxr-plugin</artifactId>
-                <version>2.2</version>
+                <version>2.5</version>
             </plugin>
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-pmd-plugin</artifactId>
-                <version>2.5</version>
+                <version>3.4</version>
                 <configuration>
                     <targetJdk>1.5</targetJdk>
                     <rulesets>
@@ -154,7 +154,7 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>findbugs-maven-plugin</artifactId>
-                <version>2.3.1</version>
+                <version>3.0.1</version>
                 <configuration>
                     <effort>Max</effort>
                 </configuration>
@@ -163,7 +163,7 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>cobertura-maven-plugin</artifactId>
-                <version>2.4</version>
+                <version>2.7</version>
                 <configuration>
                     <formats>
                         <format>xml</format>
@@ -174,13 +174,13 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <version>2.7</version>
+                <version>2.10.2</version>
             </plugin>
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-report-plugin</artifactId>
-                <version>2.6</version>
+                <version>2.18.1</version>
             </plugin>
 
         </plugins>
