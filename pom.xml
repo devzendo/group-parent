@@ -25,11 +25,11 @@
         </license>
     </licenses>
     <scm>
-        <url>https://devzendo@bitbucket.org/devzendo/group-parent</url>
-        <connection>scm:hg:https://devzendo@bitbucket.org/devzendo/group-parent
+        <url>https://bitbucket.org/devzendo/group-parent</url>
+        <connection>scm:hg:https://bitbucket.org/devzendo/group-parent
         </connection>
         <developerConnection>
-            scm:hg:https://devzendo@bitbucket.org/devzendo/group-parent
+            scm:hg:https://bitbucket.org/devzendo/group-parent
         </developerConnection>
     </scm>
     <developers>
