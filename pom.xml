@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
     <groupId>org.devzendo</groupId>
     <artifactId>group-parent</artifactId>
+    <version>1.1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>group-parent</name>
-    <version>1.1.0-SNAPSHOT</version>
+
     <description>The parent of all DevZendo.org Maven Java projects
-        (Apache License v2) 2008-2015 Matt Gumbley, DevZendo.org
+        (Apache License v2) 2008-2017 Matt Gumbley, DevZendo.org
     </description>
 
     <url>http://www.devzendo.org/content/groupparent</url>
@@ -24,14 +26,13 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
+
     <scm>
         <url>https://bitbucket.org/devzendo/group-parent</url>
-        <connection>scm:hg:https://bitbucket.org/devzendo/group-parent
-        </connection>
-        <developerConnection>
-            scm:hg:https://bitbucket.org/devzendo/group-parent
-        </developerConnection>
+        <connection>scm:hg:https://bitbucket.org/devzendo/group-parent</connection>
+        <developerConnection>scm:hg:https://bitbucket.org/devzendo/group-parent</developerConnection>
     </scm>
+
     <developers>
         <developer>
             <id>matt.gumbley</id>
@@ -40,15 +41,8 @@
         </developer>
     </developers>
 
-    <parent>
-        <groupId>org.sonatype.oss</groupId>
-        <artifactId>oss-parent</artifactId>
-        <version>7</version>
-    </parent>
-
     <build>
         <plugins>
-
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.3</version>
@@ -120,7 +114,6 @@
                     </execution>
                 </executions>
             </plugin>
-
         </plugins>
     </build>
 
@@ -185,7 +178,6 @@
                 <artifactId>maven-surefire-report-plugin</artifactId>
                 <version>2.18.1</version>
             </plugin>
-
         </plugins>
     </reporting>
 </project>
