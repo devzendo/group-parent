@@ -13,7 +13,7 @@
         (Apache License v2) 2008-2017 Matt Gumbley, DevZendo.org
     </description>
 
-    <url>http://www.devzendo.org/content/groupparent</url>
+    <url>https://devzendo.github.io/dev/commons/</url>
 
     <organization>
         <name>DevZendo.org</name>
@@ -43,14 +43,14 @@
     </developers>
 
     <properties>
-        <maven.compiler.target>1.6</maven.compiler.target>
+        <maven.compiler.target>1.6</maven.compiler.target> <!-- TODO increase to 1.8 -->
     </properties>
 
     <build>
         <plugins>
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.3</version>
+                <version>3.7.0</version>
                 <configuration>
                     <source>${maven.compiler.target}</source>
                     <target>${maven.compiler.target}</target>
@@ -74,7 +74,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
-                <version>2.6</version>
+                <version>3.0.2</version>
                 <executions>
                     <execution>
                         <phase>package</phase>
@@ -91,7 +91,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-source-plugin</artifactId>
-                <version>2.4</version>
+                <version>2.4</version>  <!-- TODO latest -->
                 <executions>
                     <execution>
                         <id>attach-sources</id>
@@ -105,7 +105,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-gpg-plugin</artifactId>
-                <version>1.6</version>
+                <version>1.6</version>  <!-- TODO latest -->
                 <executions>
                     <execution>
                         <id>sign-artifacts</id>
@@ -123,7 +123,7 @@
             <plugin>
                 <groupId>com.qualinsight.mojo.cobertura</groupId>
                 <artifactId>qualinsight-mojo-cobertura-core</artifactId>
-                <version>2.0.0</version>
+                <version>2.0.0</version>  <!-- TODO latest? -->
                 <executions>
                     <execution>
                         <id>instrument-ut</id>
@@ -165,7 +165,7 @@
         <dependency>
             <groupId>net.sourceforge.cobertura</groupId>
             <artifactId>cobertura</artifactId>
-            <version>2.1.1</version>
+            <version>2.1.1</version>  <!-- TODO latest? -->
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -175,13 +175,13 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jxr-plugin</artifactId>
-                <version>2.5</version>
+                <version>2.5</version>  <!-- TODO latest -->
             </plugin>
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-pmd-plugin</artifactId>
-                <version>3.8</version>
+                <version>3.8</version>  <!-- TODO latest? -->
                 <configuration>
                     <targetJdk>${maven.compiler.target}</targetJdk>
                     <rulesets>
@@ -203,7 +203,7 @@
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
                 <artifactId>findbugs-maven-plugin</artifactId>
-                <version>3.0.5</version>
+                <version>3.0.5</version>  <!-- TODO latest -->
                 <configuration>
                     <effort>Max</effort>
                 </configuration>
@@ -212,19 +212,19 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
-                <version>2.10.4</version>
+                <version>2.10.4</version>  <!-- TODO latest -->
             </plugin>
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-report-plugin</artifactId>
-                <version>2.20.1</version>
+                <version>2.20.1</version>  <!-- TODO latest? -->
             </plugin>
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-project-info-reports-plugin</artifactId>
-                <version>2.9</version>
+                <version>2.9</version>  <!-- TODO latest -->
             </plugin>
 
         </plugins>
