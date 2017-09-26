@@ -31,8 +31,8 @@
         <url>https://bitbucket.org/devzendo/group-parent</url>
         <connection>scm:hg:https://bitbucket.org/devzendo/group-parent</connection>
         <developerConnection>scm:hg:https://bitbucket.org/devzendo/group-parent</developerConnection>
-      <tag>HEAD</tag>
-  </scm>
+        <tag>HEAD</tag>
+    </scm>
 
     <developers>
         <developer>
