@@ -11,7 +11,7 @@
     <name>group-parent</name>
 
     <description>The parent of all DevZendo.org Maven Java projects
-        (Apache License v2) 2008-2017 Matt Gumbley, DevZendo.org
+        (Apache License v2) 2008-2019 Matt Gumbley, DevZendo.org
     </description>
 
     <url>https://devzendo.github.io/dev/commons/</url>
