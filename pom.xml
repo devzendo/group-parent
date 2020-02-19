@@ -28,9 +28,9 @@
     </licenses>
 
     <scm>
-        <url>https://bitbucket.org/devzendo/group-parent</url>
-        <connection>scm:hg:https://bitbucket.org/devzendo/group-parent</connection>
-        <developerConnection>scm:hg:https://bitbucket.org/devzendo/group-parent</developerConnection>
+        <url>https://github.com/devzendo/group-parent.git</url>
+        <connection>scm:git:https://github.com/devzendo/group-parent.git</connection>
+        <developerConnection>scm:git:git@github.com:devzendo/group-parent.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
 
