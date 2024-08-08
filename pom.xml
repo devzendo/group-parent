@@ -169,6 +169,8 @@
 
             <build>
                 <plugins>
+
+                    <!-- Cobertura is no longer compatible with Java 9+ 
                     <plugin>
                         <groupId>com.qualinsight.mojo.cobertura</groupId>
                         <artifactId>qualinsight-mojo-cobertura-core</artifactId>
@@ -206,16 +208,19 @@
                             </execution>
                         </executions>
                     </plugin>
+                    -->
                 </plugins>
             </build>
 
             <dependencies>
+                <!-- Cobertura is no longer compatible with Java 9+ 
                 <dependency>
                     <groupId>net.sourceforge.cobertura</groupId>
                     <artifactId>cobertura</artifactId>
                     <version>2.1.1</version>
                     <scope>test</scope>
                 </dependency>
+                -->
             </dependencies>
 
             <reporting>
