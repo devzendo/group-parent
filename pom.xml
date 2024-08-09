@@ -4,12 +4,12 @@
 
     <groupId>org.devzendo</groupId>
     <artifactId>group-parent</artifactId>
-    <version>1.1.11-SNAPSHOT</version>
+    <version>1.2.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>group-parent</name>
 
     <description>The parent of all DevZendo.org Maven Java projects
-        (Apache License v2) 2008-2019 Matt Gumbley, DevZendo.org
+        (Apache License v2) 2008-2024 Matt Gumbley, DevZendo.org
     </description>
 
     <url>https://devzendo.github.io/dev/commons/</url>
