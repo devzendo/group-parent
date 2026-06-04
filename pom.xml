@@ -9,7 +9,7 @@
     <name>group-parent</name>
 
     <description>The parent of all DevZendo.org Maven Java projects
-        (Apache License v2) 2008-2024 Matt Gumbley, DevZendo.org
+        (Apache License v2) 2008-2026 Matt Gumbley, DevZendo.org
     </description>
 
     <url>https://devzendo.github.io/dev/commons/</url>
@@ -44,12 +44,12 @@
 
     <distributionManagement>
         <snapshotRepository>
-            <id>sonatype-nexus-snapshots</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <id>maven-snapshots</id>
+            <url>http://nexus.build.devzendo.org:8081/repository/maven-snapshots/</url>
         </snapshotRepository>
         <repository>
-            <id>sonatype-nexus-staging</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+            <id>devzendo</id>
+            <url>http://nexus.build.devzendo.org:8081/repository/devzendo/</url>
         </repository>
     </distributionManagement>
 
@@ -140,9 +140,9 @@
                 <version>1.6.13</version>
                 <extensions>true</extensions>
                 <configuration>
-                    <serverId>sonatype-nexus-staging</serverId>
-                    <nexusUrl>https://oss.sonatype.org/</nexusUrl>
-                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                    <serverId>devzendo</serverId>
+                    <nexusUrl>http://nexus.build.devzendo.org:8081/nexus/</nexusUrl>
+                    <skipStaging>true</skipStaging>
                 </configuration>
             </plugin>
 
