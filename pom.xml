@@ -30,7 +30,7 @@
     <scm>
         <url>https://github.com/devzendo/group-parent.git</url>
         <connection>scm:git:https://github.com/devzendo/group-parent.git</connection>
-        <developerConnection>scm:https://github.com/devzendo/group-parent.git</developerConnection>
+        <developerConnection>scm:git:https://github.com/devzendo/group-parent.git</developerConnection>
         <tag>group-parent-1.2.1</tag>
     </scm>
 
